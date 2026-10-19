@@ -23,4 +23,4 @@ python-dotenv>=1.0.0
 pytest>=7.4.0
 
 # UI 自动化（case_type=ui 的用例依赖 Playwright）
-playwright==1.49.0
+playwright>=1.49.0
