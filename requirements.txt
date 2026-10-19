@@ -1,0 +1,26 @@
+# =====================================================
+# 独立用例仓库 bic_code_testcase 依赖
+# 平台运行场景下，qauto-backend 已安装以下包，可不重复安装
+# 本地开发 / 独立运行场景下，执行:  pip install -r requirements.txt
+# =====================================================
+
+# HTTP 请求（tec_requests / tec_powerjob）
+requests>=2.28.0
+
+# MySQL 数据库驱动（tec_db / credential_helper CRED_DB_TYPE=mysql）
+PyMySQL==1.2.0
+
+# PostgreSQL 数据库驱动（credential_helper 默认 CRED_DB_TYPE=postgresql）
+psycopg2-binary>=2.9.0
+
+# Redis 客户端（tec_redis）
+redis>=4.5.0
+
+# .env 环境变量加载（tec_redis / tec_db）
+python-dotenv>=1.0.0
+
+# 用例执行框架
+pytest>=7.4.0
+
+# UI 自动化（case_type=ui 的用例依赖 Playwright）
+playwright==1.49.0
